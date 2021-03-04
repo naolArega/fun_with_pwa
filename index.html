@@ -8,14 +8,35 @@
     <title>Document</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+
+    <button id="contacts-button">Select Contacts</button>
+    <div id="contacts">
+        <h3>Contacts</h3>
+    </div>
+    <button id="location-button">Show Location</button>
+    <div id="location">
+
+    </div>
+    <button id="openfile-button">Open file</button>
+    <button id="saveFileButton">Sace</button>
+    <div></div>
+    <button id="share">Share</button>
+
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js');
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("app/service-worker.js");
         }
     </script>
+    <script defer src="app/contactPicker.js"></script>
+    <script defer src="app/deviceMotion.js"></script>
+    <script defer src="app/externalDevice.js"></script>
+    <script defer src="app/idleDetection.js"></script>
+    <script defer src="app/fileSystem.js"></script>
+    <script defer src="app/sharing.js"></script>
 </body>
 
 </html>

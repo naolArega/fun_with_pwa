@@ -2,6 +2,15 @@
     "name": "fun with pwa",
     "short_name": "fun with pwa",
     "start_url": "/?home=true",
+    "share_target": {},
+    "shortcuts": [
+        {
+            "name": "About fun with pwa",
+            "short_name": "About",
+            "description": "View detail about this pwa",
+            "url": "/about"
+        }
+    ],
     "icons": [
         {
             "src": "icons/manifest-icon-192.png",
